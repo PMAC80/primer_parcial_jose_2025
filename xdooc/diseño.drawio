@@ -1,0 +1,19 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.4 Chrome/138.0.7204.97 Electron/37.2.1 Safari/537.36" version="28.0.4">
+  <diagram name="Diagrama de Clases" id="classes1">
+    <mxGraphModel dx="1011" dy="501" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Cliente&#xa;- id: int&#xa;- nombre: str&#xa;- apellido: str&#xa;- direccion: str" style="shape=swimlane;swimlaneLine=0;fontSize=12;startSize=100;" parent="1" vertex="1">
+          <mxGeometry x="160" y="100" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="ClienteController&#xa;- conexion: sqlite3&#xa;- cursor: sqlite3.Cursor&#xa;+ alta_cliente()&#xa;+ baja_cliente()&#xa;+ modificar_cliente()&#xa;+ obtener_cliente()&#xa;+ listar_clientes()&#xa;+ cerrar_conexion()" style="shape=swimlane;swimlaneLine=0;fontSize=12;startSize=160;" parent="1" vertex="1">
+          <mxGeometry x="400" y="100" width="240" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="AppGUI&#xa;- controller: ClienteController&#xa;+ crear_menu()&#xa;+ crear_interfaz()&#xa;+ ventana_alta()&#xa;+ ventana_baja()&#xa;+ ventana_modificar()&#xa;+listar cliente()&#xa;+ listar_clientes()&#xa;+ refresh_tabla()&#xa;+ on_cerrar()" style="shape=swimlane;swimlaneLine=0;fontSize=12;startSize=180;" parent="1" vertex="1">
+          <mxGeometry x="700" y="100" width="240" height="220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
